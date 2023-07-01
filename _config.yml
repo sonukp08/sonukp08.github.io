@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Sonu Kizhakkepura, PhD"
   avatar           : "profile.png"
-  bio              : "Postdoc @UMassChemEng, @UMassAmherst, Materials Chemist, STEM Advocate"
-  location         : "Location"
+  bio              : "Postdoc [@UMassChemEng](https://www.umass.edu/engineering/academics/departments/chemical-engineering), [@UMassAmherst](https://www.umass.edu/), Materials Chemist, STEM Advocate"
+  location         :
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
