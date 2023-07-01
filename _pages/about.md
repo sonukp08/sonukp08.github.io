@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I’m Sonu Kizhakkepura, a Postdoctoral Research Associate in the [Department of Chemical Engineering](https://www.umass.edu/engineering/academics/departments/chemical-engineering), at the [University of Massachusetts Amherst](https://www.umass.edu/). I’m a Materials Chemist specializing in the design, synthesis, and characterization of supramolecular-inorganic hybrids, stimuli-responsive materials, and polymer biomaterials. 
+Hello, I’m Sonu Kizhakkepura, a Postdoctoral Research Associate in the [Department of Chemical Engineering](https://www.umass.edu/engineering/academics/departments/chemical-engineering), at the [University of Massachusetts Amherst](https://www.umass.edu/). I’m a Materials Chemist interested in the design, synthesis, and characterization of supramolecular-inorganic hybrids, stimuli-responsive materials, and polymer biomaterials.
+
 
 A data-driven personal website
 ======
