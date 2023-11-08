@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I’m Sonu Kizhakkepura, a Postdoctoral Research Associate in the [Department of Chemical Engineering] (https://www.umass.edu/engineering/academics/departments/chemical-engineering), and [Department of Chemistry] (https://www.umass.edu/chemistry/) at the [University of Massachusetts Amherst](https://www.umass.edu/). 
+Hello, I’m Sonu Kizhakkepura, a Postdoctoral Research Associate in the [Department of Chemical Engineering](https://www.umass.edu/engineering/academics/departments/chemical-engineering), and [Department of Chemistry](https://www.umass.edu/chemistry/) at the [University of Massachusetts Amherst](https://www.umass.edu/). 
 
 
 
