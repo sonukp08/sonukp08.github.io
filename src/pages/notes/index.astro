@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const notes=(await getCollection('notes')).sort((a,b)=>b.data.date.valueOf()-a.data.date.valueOf());
+---
+<BaseLayout title="Scientific Notes | Sonu Kizhakkepura"><main><header class="page-header"><div class="container"><div class="kicker">Knowledge · Analysis · Explanation</div><h1>Scientific Notes</h1><p class="hero-text">Short technical essays on materials, surfaces, interfaces, analytical characterization, biomaterials, microfluidics and pharmaceutical science.</p></div></header><section class="section"><div class="container note-list">
+{notes.map(note=><a class="note-item" href={`/notes/${note.slug}/`}><div><div class="note-date">{note.data.date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}</div><div class="meta">{note.data.category} · {note.data.readingTime ?? ''}</div></div><div><h3>{note.data.title}</h3><p>{note.data.description}</p></div></a>)}
+</div></section></main></BaseLayout>

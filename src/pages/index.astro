@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const notes=(await getCollection('notes')).sort((a,b)=>b.data.date.valueOf()-a.data.date.valueOf()).slice(0,4);
+---
+<BaseLayout><main>
+<section class="hero"><div class="container"><div class="kicker">Materials Chemistry · Scientific Portfolio</div><h1>Materials, surfaces, interfaces &amp; scientific problem solving.</h1><div class="hero-subtitle">A professional portfolio of research, technical expertise, projects and scientific thinking.</div><p class="hero-text">Exploring materials chemistry and its applications across surface characterization, polymeric materials, biomaterials, microfluidics and pharmaceutical science.</p><div class="actions"><a class="button primary" href="/#expertise">Explore expertise</a><a class="button" href="/notes/">Read scientific notes</a></div></div></section>
+<section class="section" id="about"><div class="container"><div class="section-heading"><div><div class="kicker">About</div><h2>Scientist. Characterization specialist. Problem solver.</h2></div><p>A concise professional overview for recruiters, collaborators and technical hiring managers.</p></div></div></section>
+<section class="section" id="expertise"><div class="container"><div class="section-heading"><div><div class="kicker">Expertise</div><h2>What I work with</h2></div><p>Capabilities are presented as scientific problem-solving areas rather than as a simple instrument list.</p></div><div class="grid">
+<article class="card"><h3>Surface &amp; Interface Science</h3><p>Surface area, porosity, adsorption, moisture interactions, wettability, diffusivity and material–environment interactions.</p><div class="tags">BET · DVS · Contact angle · Diffusivity</div></article>
+<article class="card"><h3>Materials Chemistry</h3><p>Functional materials, polymeric systems, porous materials, surface functionalization and structure–property relationships.</p><div class="tags">Polymers · Porous materials · Nanomaterials</div></article>
+<article class="card"><h3>Biomaterials &amp; Microfluidics</h3><p>Hydrogel systems, biomaterial interfaces, microfluidic devices and molecular separations.</p><div class="tags">Hydrogels · Microfluidics · RNA processing</div></article>
+</div></div></section>
+<section class="section" id="projects"><div class="container"><div class="section-heading"><div><div class="kicker">Projects</div><h2>From scientific question to working solution.</h2></div><p>Project pages will document the problem, reasoning, methods, contribution and outcome without exposing confidential information.</p></div><div class="grid">
+<article class="card"><h3>Microfluidic RNA Manufacturing</h3><p>Microfluidic separation and hydrogel-membrane approaches for purification of RNA processing streams.</p></article>
+<article class="card"><h3>Strain-Stiffening Hydrogels</h3><p>Polymeric networks and mechanical characterization of nonlinear biomaterial behavior.</p></article>
+<article class="card"><h3>Surface Characterization</h3><p>Application of surface, thermal and transport measurements to pharmaceutical material questions.</p></article>
+</div></div></section>
+<section class="section" id="notes"><div class="container"><div class="section-heading"><div><div class="kicker">Scientific Notes</div><h2>Short technical essays.</h2></div><p>An evolving collection of concise explanations, practical insights and scientific observations.</p></div><div class="note-list">
+{notes.map(note=><a class="note-item" href={`/notes/${note.slug}/`}><div class="note-date">{note.data.date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}</div><div><h3>{note.data.title}</h3><p>{note.data.description}</p></div></a>)}
+</div><div class="actions"><a class="button" href="/notes/">View all scientific notes →</a></div></div></section>
+<section class="section" id="publications"><div class="container"><div class="section-heading"><div><div class="kicker">Publications &amp; Contributions</div><h2>Peer-reviewed work and beyond.</h2></div><p>Publications, book chapters, patents, technical projects, presentations and other scientific contributions will be collected here.</p></div></div></section>
+<section class="section" id="contact"><div class="container"><div class="cta"><div class="kicker">Contact</div><h2>Interested in working together?</h2><p>Professional contact details and profile links will be added here.</p><div class="actions"><a class="button primary" href="mailto:info@sonukp.in">info@sonukp.in</a></div></div></div></section>
+</main></BaseLayout>
