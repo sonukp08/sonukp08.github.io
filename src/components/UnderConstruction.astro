@@ -1,0 +1,256 @@
+<main class="construction-page">
+  <div class="construction-wrap">
+    <header class="construction-header">
+      <a class="construction-brand" href="/" aria-label="Sonu Kizhakkepura home">
+        <span class="brand-mark" aria-hidden="true">SK</span>
+        <span>Sonu Kizhakkepura</span>
+      </a>
+      <span class="status"><span class="status-dot"></span> Site refresh in progress</span>
+    </header>
+
+    <section class="construction-content" aria-labelledby="construction-title">
+      <div class="copy">
+        <p class="eyebrow">A new portfolio is taking shape</p>
+        <h1 id="construction-title">Good work takes<br />careful making.</h1>
+        <p class="intro">
+          I’m building a new home for my work in materials chemistry, surface science,
+          and scientific problem solving. Please check back soon.
+        </p>
+        <a class="contact-link" href="mailto:info@sonukp.in">
+          Get in touch <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="visual" aria-hidden="true">
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-middle"></div>
+        <div class="orbit orbit-inner"></div>
+        <div class="visual-core"><span>SK</span></div>
+        <div class="visual-caption"><span>IN PROGRESS</span><span>01 — 03</span></div>
+      </div>
+    </section>
+
+    <footer class="construction-footer">
+      <span>Materials · Surfaces · Interfaces</span>
+      <span>sonukp.in</span>
+    </footer>
+  </div>
+</main>
+
+<style>
+  .construction-page {
+    min-height: 100vh;
+    padding: 0 28px;
+    background:
+      radial-gradient(ellipse at 76% 48%, rgba(128, 99, 62, .10), transparent 34%),
+      var(--paper);
+  }
+
+  .construction-wrap {
+    width: min(1180px, 100%);
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .construction-header,
+  .construction-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .construction-header {
+    min-height: 90px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .construction-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  .brand-mark {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 11px;
+    letter-spacing: .04em;
+  }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(128, 99, 62, .12);
+  }
+
+  .construction-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 8%;
+    padding: 70px 0;
+  }
+
+  .copy { position: relative; z-index: 1; }
+
+  .eyebrow {
+    margin: 0 0 21px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    color: var(--ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(58px, 7.4vw, 96px);
+    font-weight: 600;
+    letter-spacing: -.035em;
+    line-height: .94;
+  }
+
+  .intro {
+    max-width: 490px;
+    margin: 27px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 31px;
+    padding: 13px 17px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 12px;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+  }
+
+  .contact-link:hover {
+    background: transparent;
+    color: var(--ink);
+  }
+
+  .contact-link span { font-size: 16px; }
+
+  .visual {
+    position: relative;
+    width: min(100%, 420px);
+    aspect-ratio: 1;
+    justify-self: center;
+    border-radius: 50%;
+  }
+
+  .orbit {
+    position: absolute;
+    inset: 50%;
+    border: 1px solid rgba(128, 99, 62, .24);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .orbit-outer { width: 100%; height: 100%; }
+  .orbit-middle { width: 76%; height: 76%; border-style: dashed; }
+  .orbit-inner { width: 50%; height: 50%; border-color: rgba(128, 99, 62, .45); }
+
+  .visual-core {
+    position: absolute;
+    inset: 50%;
+    display: grid;
+    width: 30%;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--paper);
+    box-shadow: 0 16px 50px rgba(37, 35, 31, .16);
+    transform: translate(-50%, -50%);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(25px, 4vw, 40px);
+    letter-spacing: .04em;
+  }
+
+  .visual-core span { transform: translateY(-2px); }
+
+  .visual-caption {
+    position: absolute;
+    right: 1%;
+    bottom: 13%;
+    display: grid;
+    gap: 3px;
+    padding: 11px 14px;
+    border: 1px solid var(--line);
+    background: rgba(246, 243, 236, .9);
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: .12em;
+  }
+
+  .visual-caption span:first-child { color: var(--accent); font-weight: 600; }
+
+  .construction-footer {
+    min-height: 66px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: .04em;
+  }
+
+  @media (max-width: 700px) {
+    .construction-page { padding: 0 20px; }
+    .construction-header { min-height: 76px; }
+    .construction-brand { font-size: 18px; }
+    .status { font-size: 9px; letter-spacing: .04em; }
+    .construction-content {
+      grid-template-columns: 1fr;
+      gap: 44px;
+      padding: 74px 0 56px;
+    }
+    h1 { font-size: clamp(58px, 15vw, 86px); }
+    .visual { width: min(76vw, 310px); }
+    .construction-footer { font-size: 10px; }
+  }
+
+  @media (max-width: 390px) {
+    .construction-page { padding: 0 16px; }
+    .construction-brand { gap: 8px; font-size: 16px; }
+    .brand-mark { width: 31px; height: 31px; }
+    .status { max-width: 112px; text-align: right; }
+    .construction-footer { gap: 10px; }
+  }
+</style>
